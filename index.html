@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Card Crawler Game Engine // ALPHA //</title>
+
+    <style>
+      @font-face {
+        font-family: digital;
+        src: url("assets/fonts/digital-7.ttf");
+      }
+      @font-face {
+        font-family: digital-mono;
+        src: url("assets/fonts/digital-7-mono.ttf");
+      }
+      @font-face {
+        font-family: roadrage;
+        src: url("assets/fonts/Road_Rage.otf");
+      }
+      html,
+      body,
+      #game-container {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #111;
+      }
+
+      #game-container {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #game-container canvas {
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="font-family: roadrage; position: absolute; visibility: hidden;">
+      .
+    </div>
+    <div style="font-family: digital; position: absolute; visibility: hidden;">
+      .
+    </div>
+    <div
+      style="font-family: digital-mono; position: absolute; visibility: hidden;"
+    >
+      .
+    </div>
+    <div id="game-container"></div>
+
+    <script src="js/SceneMainMenu.js"></script>
+    <script src="js/SceneMain.js"></script>
+    <script src="js/SceneGameOver.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
